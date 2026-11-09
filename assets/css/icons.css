@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?25982426');
+  src: url('../fonts/fontello.eot?25982426#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?25982426') format('woff2'),
+       url('../fonts/fontello.woff?25982426') format('woff'),
+       url('../fonts/fontello.ttf?25982426') format('truetype'),
+       url('../fonts/fontello.svg?25982426#fontello') format('svg');
+      
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?25982426#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="mei-"]:before, [class*=" mei-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.mei-settings:before { content: '\e800'; } /* '' */
+.mei-team:before { content: '\e801'; } /* '' */
+.mei-transfer:before { content: '\e802'; } /* '' */
+.mei-web-design:before { content: '\e803'; } /* '' */
+.mei-app-development:before { content: '\e804'; } /* '' */
+.mei-computer-graphic:before { content: '\e805'; } /* '' */
+.mei-development-1:before { content: '\e808'; } /* '' */
+.mei-development:before { content: '\e807'; } /* '' */
+.mei-pie-chart:before { content: '\e808'; } /* '' */
+.mei-menu:before { content: '\e809'; } /* '' */
+.mei-production:before { content: '\e80a'; } /* '' */
+.mei-project-management:before { content: '\e80b'; } /* '' */
+.mei-advertising:before { content: '\e80c'; } /* '' */
+.mei-magnifying-glass:before { content: '\e80d'; } /* '' */
+.mei-dayticket:before { content: '\e80b'; } /* '' */
+
+
+.icon-book::before{
+  content: url(ICON_the_good_places_book.svg);
+  
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  
+} 
+
+.icon-kurse::before{
+  content: url(ICON_the_good_places_kurse.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-events::before{
+  content: url(ICON_the_good_places_events.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-gesundes-essen::before{
+  content: url(ICON_the_good_places_gesundes_essen.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-tagestarif::before{
+  content: url(ICON_the_good_places_tagestarif.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-wochentarif::before{
+  content: url(ICON_the_good_places_wochentarif.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-monatstarif::before{
+  content: url(ICON_the_good_places_monatstarif.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-kurs-grafik::before{
+  content: url(ICON_the_good_places_kurse-grafik-design.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-kurs-coding::before{
+  content: url(ICON_the_good_places_kurse-coding.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.icon-kurs-fotografie::before{
+  content: url(ICON_the_good_places_kurse-photografie.svg);
+  display: inline-block;
+  text-decoration: inherit;
+  width: 2em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+
+/* ' background-image: url(ICON_the_good_places_Book_your_place.png);
+       @import url(/assets/icon/ICON_tgp_Book.svg);
+       without before the icon have no defined attributs
+*/
+
+/* @import url(/assets/icon/ICON_tgp_Book.svg); */
+
+.symptom-card {
+  z-index: 0;
+  cursor: pointer;
+  padding: 24px 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+
+  /* ✨ schöner Schatten */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+  /* ✨ weiche Animation */
+  transition: all 0.3s ease;
+
+  /* ✨ gleichmäßige Höhe */
+  height: 100%;
+}
+
+
+.symptom-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.symptom-card.folioHover {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  z-index: 3;
+  transition: all ease 900ms;
+  -moz-transition: all ease 900ms;
+  -webkit-transition: all ease 900ms;
+  -o-transition: all ease 900ms;
+}
+.symptom-card:after {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(231, 39, 123, 0.8);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  content: "";
+  transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+
+  border-radius: 50px;
+
+}
+.symptom-card .folioHover a.cate {
+  font-size: 12px;
+  line-height: 32px;
+  color: #fff;
+  display: block;
+  letter-spacing: 1.2px;
+  margin: 0 0 3px;
+  text-transform: uppercase;
+  transition: all ease 400ms;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+}
+.symptom-card .folioHover h4 {
+  font-size: 20px;
+  line-height: 0.8;
+  color: #fff;
+  letter-spacing: 0.8px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.symptom-card .folioHover h4 a {
+  color: #fff;
+  transition: all ease 400ms;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+}
+.symptom-card:hover img {
+  transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  -ms-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.symptom-card:hover .folioHover {
+  visibility: visible;
+  opacity: 1;
+  left: 50px;
+}
+.symptom-card:hover:after {
+  width: 100%;
+}
+.symptom-card .folioHover a.cate:hover,
+.symptom-card .folioHover h4 a:hover {
+  color: #000;
+}
+
+
+
+/* 🖼️ Icon */
+.symptom-image {
+  position: relative;
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* 📝 Text */
+.symptom-card p {
+  z-index: 4;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+
+
